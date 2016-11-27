@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+void changelocation(int ,int );
+int main ()
+{
+ int a,b;
+ cout<< "Nhap vao a: ";
+ cin>>a;
+ cout<< "Nhap vao b: ";
+ cin>>b;
+ cout<< "Vi tri ban dau la: "<<a<<" "<<b<<endl;
+ cout<< "Vi tri sau khi hoan doi 2 so: ";
+ changelocation(a,b);
+
+
+}
+void changelocation(int a,int b)
+{
+
+    int temp=a;
+        a=b;
+        b=temp;
+        cout<<a<<" "<<b;
+}
